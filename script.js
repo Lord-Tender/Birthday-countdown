@@ -7,7 +7,7 @@ const cancelCounter = () => {
 }
 
 const countDown = () => {
-    let countDownDate = new Date('2024-05-24')
+    let countDownDate = new Date('2024-05-23')
     let now = new Date()
     let difference = countDownDate - now
     let date = new Date(difference)
