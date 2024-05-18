@@ -23,7 +23,7 @@ header h1 {
     font-weight: 500;
     font-size: 2em;
     color: aliceblue;
-    text-shadow: 2px 2px 2px rgb(172, 170, 170) ;
+    text-shadow: 2px 2px 2px rgb(172, 170, 170);
 }
 
 header button {
@@ -83,7 +83,7 @@ header button:hover {
     position: relative;
 }
 
-.imgs{
+.imgs {
     display: flex;
     width: 80%;
     margin-left: 10%;
@@ -91,22 +91,22 @@ header button:hover {
     padding-top: 20px;
 }
 
-.imgs div{
+.imgs div {
     width: 23%;
     height: 15em;
     border: 5px aliceblue solid;
-    outline: 2px  rgba(0, 183, 255, 0.801) solid;
+    outline: 2px rgba(0, 183, 255, 0.801) solid;
     border-radius: 3%;
 }
 
-.imgs img{
+.imgs img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 2%;
 }
 
-.wish{
+.wish {
     background-color: rgba(0, 0, 0, 0.349);
     width: 17rem;
     height: 22em;
@@ -118,7 +118,7 @@ header button:hover {
     border: 2px rgba(255, 255, 255, 0.815) solid;
 }
 
-.wish p{
+.wish p {
     font-family: "Moon Dance", cursive;
     font-size: 2em;
     text-align: center;
@@ -127,7 +127,7 @@ header button:hover {
     text-shadow: 1px 1px 1px;
 }
 
-.counter{
+.counter {
     position: absolute;
     top: 0;
     background-color: rgba(0, 0, 0, 0.445);
@@ -136,19 +136,19 @@ header button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
-.innerCounter{
+.innerCounter {
     width: 40%;
     height: 45%;
     background-color: white;
     border-radius: 5px;
     margin-top: -4%;
     position: relative;
-    display: none;
 }
 
-.innerCounter h2{
+.innerCounter h2 {
     font-family: "Abel", sans-serif;
     text-align: center;
     font-size: 2rem;
@@ -156,7 +156,7 @@ header button:hover {
     color: rgb(6, 136, 250);
 }
 
-#cancel{
+#cancel {
     font-size: 2rem;
     position: absolute;
     top: -35px;
@@ -164,44 +164,94 @@ header button:hover {
     color: white;
 }
 
+.showCounter {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    gap: 4%;
+    height: 30%;
+    background-color: rgb(6, 136, 250);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 8%;
+}
+
+.showCounter div {
+    width: 24%;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(6, 136, 250);
+}
+
+#theDay{
+    font: 1.3em "Abel", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 25px;
+    color: orangered;
+    display: none;
+}
+
 
 @media screen and (max-width:600px) {
-    .firstBody h1{
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .firstBody h1 {
         font-size: 1.4rem;
     }
-    .firstBody button{
+
+    .firstBody button {
         font-size: 0.9em;
         width: 70%;
         margin-left: 15%;
         margin-top: 8%;
     }
-    .wish{
+
+    .wish {
         width: 8rem;
         height: 10em;
         top: -15%;
     }
-    .wish p{
+
+    .wish p {
         font-size: 1.1em;
     }
-    .secondBody{
+
+    .secondBody {
         height: 100%;
         padding-bottom: 15px;
     }
-    .imgs{
+
+    .imgs {
         width: 90%;
         margin-left: 5%;
         flex-wrap: wrap;
         gap: 4%;
         row-gap: 14px;
     }
-    .imgs div{
+
+    .imgs div {
         width: 48%;
         height: 10em;
     }
-    .innerCounter{
-        width: 80%;
+
+    .innerCounter {
+        width: 95%;
     }
-    .innerCounter h2{
+
+    .innerCounter h2 {
         margin-top: 9%;
+    }
+
+    .showCounter div {
+        font-size: 0.7em;
     }
 }
