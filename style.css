@@ -127,6 +127,42 @@ header button:hover {
     text-shadow: 1px 1px 1px;
 }
 
+.counter{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerCounter{
+    width: 40%;
+    height: 45%;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: -4%;
+    position: relative;
+    display: none;
+}
+
+.innerCounter h2{
+    font-family: "Abel", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4%;
+    color: rgb(6, 136, 250);
+}
+
+#cancel{
+    font-size: 2rem;
+    position: absolute;
+    top: -35px;
+    right: 0;
+    color: white;
+}
 
 
 @media screen and (max-width:600px) {
@@ -140,7 +176,12 @@ header button:hover {
         margin-top: 8%;
     }
     .wish{
-        display: none;
+        width: 8rem;
+        height: 10em;
+        top: -15%;
+    }
+    .wish p{
+        font-size: 1.1em;
     }
     .secondBody{
         height: 100%;
@@ -156,5 +197,11 @@ header button:hover {
     .imgs div{
         width: 48%;
         height: 10em;
+    }
+    .innerCounter{
+        width: 80%;
+    }
+    .innerCounter h2{
+        margin-top: 9%;
     }
 }

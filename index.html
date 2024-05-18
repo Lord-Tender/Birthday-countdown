@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday in abit</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="https://kit.fontawesome.com/7c37944b19.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,13 +16,13 @@
 
 <body>
     <header>
-        <h1>Inaddy Ajoke</h1>
+        <h1>Inaddy Ajoke ❣💞</h1>
         <button>Wish me too!</button>
     </header>
     <div class="body">
         <div class="firstBody">
             <h1>My birthday is coming soon...</h1>
-            <button>See Countdown</button>
+            <button onclick="showCounter()">See Countdown</button>
         </div>
         <div class="secondBody">
             <div class="imgs">
@@ -35,11 +36,15 @@
             </div>
         </div>
     </div>
-    <!-- <div class="counter">
+    <div class="counter">
         <div class="innerCounter">
-            <h1>00:00:00</h1>
+            <div id="cancel" onclick="cancelCounter()"><i class="fa-solid fa-xmark"></i></div>
+            <h2>Birthday loading...</h2>
+            <h1 id="showCounter"></h1>
         </div>
-    </div> -->
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
