@@ -1,15 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-button:focus{
+button:focus {
     outline: none;
     border: none;
 }
 
-header{
+header {
     background-color: rgb(121, 190, 252);
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,14 @@ header{
     align-items: center;
 }
 
-header button{
+header h1 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    font-size: 2em;
+    color: aliceblue;
+}
+
+header button {
     border-radius: 30px;
     width: 9em;
     height: 3em;
@@ -27,12 +34,12 @@ header button{
     color: white;
 }
 
-header button:hover{
+header button:hover {
     border: 2px white solid;
     outline: 3px rgb(88, 170, 241) solid;
 }
 
-.firstBody{
+.firstBody {
     background-color: rgb(41, 62, 252);
     height: 40vh;
     background-color: whitesmoke;
@@ -41,13 +48,13 @@ header button:hover{
     justify-content: center;
 }
 
-.firstBody h1{
+.firstBody h1 {
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: orangered;
 }
 
-.firstBody button{
+.firstBody button {
     width: 40%;
     margin-left: 30%;
     margin-top: 3%;
@@ -55,21 +62,22 @@ header button:hover{
     border-radius: 45px;
     background-color: rgb(6, 136, 250);
     color: aliceblue;
-    font-size: 1.05em;
+    font-size: 1.1em;
     border: 3px aliceblue solid;
     outline: 2px rgb(6, 136, 250) solid;
     transition: 800ms;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.firstBody button:hover{
+.firstBody button:hover {
     background-color: rgb(179, 220, 255);
     color: rgb(6, 136, 250);
     border: 3px rgb(6, 136, 250) solid;
     outline: 2px aliceblue solid;
 }
 
-.secondBody{
+.secondBody {
     background-color: rgb(121, 190, 252);
     height: 48vh;
 }
