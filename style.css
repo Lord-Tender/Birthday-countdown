@@ -65,7 +65,6 @@ header button:hover {
     font-size: 1.1em;
     border: 3px aliceblue solid;
     outline: 2px rgb(6, 136, 250) solid;
-    transition: 800ms;
     font-weight: 600;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -74,12 +73,14 @@ header button:hover {
     background-color: rgb(179, 220, 255);
     color: rgb(6, 136, 250);
     border: 3px rgb(6, 136, 250) solid;
+    transition: 800ms;
     outline: 2px aliceblue solid;
 }
 
 .secondBody {
     background-color: rgb(121, 190, 252);
     height: 48vh;
+    position: relative;
 }
 
 .imgs{
@@ -94,15 +95,34 @@ header button:hover {
     width: 22%;
     height: 15em;
     border: 5px aliceblue solid;
-    outline: 2px  orange solid;
+    outline: 2px  rgba(0, 183, 255, 0.801) solid;
     border-radius: 3%;
 }
 
 .imgs img{
     width: 100%;
     height: 100%;
-    /* object-fit: contain; */
     object-fit: cover;
-    /* object-fit: fill; */
     border-radius: 2%;
+}
+
+.wish{
+    background-color: rgba(0, 0, 0, 0.349);
+    width: 17rem;
+    height: 22em;
+    border-radius: 9px;
+    padding: 7px;
+    position: absolute;
+    top: -75%;
+    left: 3%;
+    border: 2px rgba(255, 255, 255, 0.815) solid;
+}
+
+.wish p{
+    font-family: "Moon Dance", cursive;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10%;
+    color: white;
+    text-shadow: 1px 1px 1px;
 }
