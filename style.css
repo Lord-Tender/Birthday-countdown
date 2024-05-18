@@ -87,12 +87,12 @@ header button:hover {
     display: flex;
     width: 80%;
     margin-left: 10%;
-    gap: 3%;
+    gap: 4%;
     padding-top: 20px;
 }
 
 .imgs div{
-    width: 22%;
+    width: 23%;
     height: 15em;
     border: 5px aliceblue solid;
     outline: 2px  rgba(0, 183, 255, 0.801) solid;
@@ -125,4 +125,36 @@ header button:hover {
     margin-top: 10%;
     color: white;
     text-shadow: 1px 1px 1px;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .firstBody h1{
+        font-size: 1.4rem;
+    }
+    .firstBody button{
+        font-size: 0.9em;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 8%;
+    }
+    .wish{
+        display: none;
+    }
+    .secondBody{
+        height: 100%;
+        padding-bottom: 15px;
+    }
+    .imgs{
+        width: 90%;
+        margin-left: 5%;
+        flex-wrap: wrap;
+        gap: 4%;
+        row-gap: 14px;
+    }
+    .imgs div{
+        width: 48%;
+        height: 10em;
+    }
 }
