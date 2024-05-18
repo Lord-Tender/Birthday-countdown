@@ -218,7 +218,7 @@ header button:hover {
     .wish {
         width: 8rem;
         height: 10em;
-        top: -15%;
+        top: -6em;
     }
 
     .wish p {
@@ -245,10 +245,15 @@ header button:hover {
 
     .innerCounter {
         width: 95%;
+        height: 24rem;
     }
 
     .innerCounter h2 {
         margin-top: 9%;
+    }
+
+    .showCounter{
+        height: 6.5em;
     }
 
     .showCounter div {
